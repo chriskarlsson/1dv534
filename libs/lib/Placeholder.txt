@@ -1,0 +1,2 @@
+This file ensures that the folder is not removed by ZIP-program. 
+After unpacking it can be erased without problems.

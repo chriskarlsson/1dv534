@@ -5,4 +5,4 @@ This is my implementations of the tasks in the course 1dv534 Object oriented pro
 The repository submodules [Catch2](https://github.com/catchorg/Catch2) framework for running unit tests.
 1. Clone the repository.
 2. Get unit testing framework `git submodule init; git submodule update;`
-3. Build the project using Visual Studio
+3. Build library files using cmake `cd libs; cmake .; make;`
