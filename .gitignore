@@ -34,7 +34,7 @@
 # submodules
 Catch2/
 
-#cmake
+# cmake
 CMakeCache.txt
 CMakeFiles
 CMakeScripts
@@ -44,3 +44,7 @@ cmake_install.cmake
 install_manifest.txt
 compile_commands.json
 CTestTestfile.cmake
+CMakeLists.txt.user
+
+# qt creator
+build-1dv534*
