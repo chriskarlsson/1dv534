@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 3.7)
 
 project(1dv534_1_1_miserable_test)
 
@@ -10,5 +10,5 @@ add_executable(${PROJECT_NAME} "miserable-test.cpp" "measurements-mock.cpp")
 
 target_link_libraries(
     ${PROJECT_NAME}
-    ${CMAKE_BINARY_DIR}/src/CMakeFiles/1dv534_1_1_miserable.dir/miserable.cpp.obj
+    ${CMAKE_BINARY_DIR}/src/CMakeFiles/1dv534_1_1_miserable.dir/miserable.cpp.o
 )
