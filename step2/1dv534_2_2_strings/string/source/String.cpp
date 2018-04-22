@@ -10,18 +10,15 @@
 //-----------------------------------------------------------------------------
 
 // Preprocessor directives
-#include <cstring> // strlen, strcpy, strcat
-#include <ostream> // ostream
-#include <istream> // istream
 #include <String.h>
-
-// Usings
 using std::strlen;
 using std::strcpy;
 using std::strcat;
 using std::isblank;
 using std::iscntrl;
 
+using std::ostream;
+using std::istream;
 //-----------------------------------------------------------------------------
 // String()
 //

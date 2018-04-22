@@ -1,6 +1,18 @@
 #ifndef STRING_H // String.h
 #define STRING_H
 
+#include <cstring> // strlen, strcpy, strcat
+#include <iostream>
+#include <ostream> // ostream
+#include <istream> // istream
+
+// Usings
+using std::strlen;
+using std::strcpy;
+using std::strcat;
+using std::isblank;
+using std::iscntrl;
+
 using std::ostream;
 using std::istream;
 
