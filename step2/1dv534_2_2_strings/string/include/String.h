@@ -1,7 +1,7 @@
 #ifndef STRING_H // String.h
 #define STRING_H
 
-#include <cstring> // strlen, strcpy, strcat
+#include <cstring>// strlen, strcpy, strcat
 #include <iostream>
 #include <ostream> // ostream
 #include <istream> // istream
