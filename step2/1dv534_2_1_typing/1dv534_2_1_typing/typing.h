@@ -11,7 +11,6 @@ private:
     void _printTask(const char * EXPECTED);
     bool _userYesOrNo(const char * QUESTION);
     void _getUserInput(char * userInput);
-    const int _MAX_READ_INPUT_LENGTH = 100;
 };
 
 #endif // TYPING_H

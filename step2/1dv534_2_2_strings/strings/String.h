@@ -1,17 +1,9 @@
+#pragma once
 #ifndef STRING_H // String.h
 #define STRING_H
 
-#include <cstring>// strlen, strcpy, strcat
-#include <iostream>
 #include <ostream> // ostream
 #include <istream> // istream
-
-// Usings
-using std::strlen;
-using std::strcpy;
-using std::strcat;
-using std::isblank;
-using std::iscntrl;
 
 using std::ostream;
 using std::istream;
@@ -34,10 +26,10 @@ public:
     bool operator==(const String& string) const;
     bool operator==(const char* cString) const;
     inline const char* toC_str() const;
-    inline int getLength() const;
+    inline size_t getLength() const;
 private:
     char* _strPtr;
-    int _strLen;
+    size_t _strLen;
 };
 
 //-----------------------------------------------------------------------------
@@ -48,8 +40,8 @@ private:
 //-----------------------------------------------------------------------------
 inline String::String()
 {
-   _strPtr = new char[1]{0};
-   _strLen = 0;
+    _strPtr = new char[1]{ 0 };
+    _strLen = 0;
 }
 
 //-----------------------------------------------------------------------------
@@ -60,7 +52,7 @@ inline String::String()
 //-----------------------------------------------------------------------------
 inline String::~String()
 {
-    delete [] _strPtr;
+    delete[] _strPtr;
 }
 
 //-----------------------------------------------------------------------------
@@ -80,7 +72,7 @@ inline const char* String::toC_str() const
 // Summary: Length of String excluding trailing null char.
 // Returns: Length of String.
 //-----------------------------------------------------------------------------
-inline int String::getLength() const
+inline size_t String::getLength() const
 {
     return _strLen;
 }
