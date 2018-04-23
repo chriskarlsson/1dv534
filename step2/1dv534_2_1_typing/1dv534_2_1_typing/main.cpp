@@ -7,15 +7,14 @@
 // Log:   2018-04-01 File created by Christoffer
 //-----------------------------------------------------------------------
 
-#include <miserable.h>
-#include <file-measurements.h>
+#include "typing.h"
 
 class Main {
 public:
     Main() = default;
     ~Main() = default;
-    int run(Miserable * miserable) {
-        return miserable->run();
+    int run(Typing & typing) {
+        return typing.run();
     }
 };
 
@@ -29,22 +28,14 @@ int main()
 {
     // Setup
     Main main;
-    FileMeasurements *fileMeasurements;
 
-    try
-    {
-        fileMeasurements = new FileMeasurements();
-    } catch(FileMeasurements::FileOpenFailed&) {
-        return 1;
-    }
-
-    auto miserable = new Miserable(fileMeasurements);
+    auto typing = new Typing();
 
     // Run application
-    auto result = main.run(miserable);
+    auto result = main.run(*typing);
 
     // Free memory
-    delete miserable;
+    delete typing;
 
     return result;
 }

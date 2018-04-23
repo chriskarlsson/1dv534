@@ -1,0 +1,21 @@
+int Application::run()
+{
+	String str1("Hello ");				String(const char* c)
+	String str2(str1);					String(const String& str)
+	cout << str1 << str2 << endl;
+
+	str2 = "my world!";
+	cout << str1 << str2 << endl;
+
+	String str3;						String()
+	cout << "Enter a name: ";
+	cin >> str3;
+    str2 = str1 + str3;					String(const char* c)	(Indirect)
+    cout << str2 << endl;
+    str2 = "Goodbye " + str3;			String(const char* c)	(Indirect)
+    cout << str2 << endl;
+    cout << str1 << "and " << "Goodbye "
+            << (str1 == "Goodbye " ? "is " : "is not ") << "the same word!\n";
+
+	return 0;
+}										~String() x3

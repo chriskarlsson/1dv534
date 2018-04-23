@@ -48,3 +48,6 @@ CMakeLists.txt.user
 
 # qt creator
 build-1dv534*
+
+# VS
+.vs
